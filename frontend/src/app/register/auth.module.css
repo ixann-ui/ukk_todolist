@@ -1,0 +1,166 @@
+/* Shared dark theme styles for auth pages */
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+      circle at 10% 10%,
+      rgba(255, 255, 255, 0.02),
+      transparent 10%
+    ),
+    linear-gradient(180deg, #0b0f14 0%, #0b1220 100%);
+  padding: 32px;
+  color: #e6eef8;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+}
+
+.card {
+  width: 420px;
+  max-width: calc(100% - 48px);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.01)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.02);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.subtitle {
+  font-size: 13px;
+  color: rgba(230, 238, 248, 0.72);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.label {
+  font-size: 13px;
+  color: rgba(230, 238, 248, 0.9);
+  margin-bottom: 6px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #e6eef8;
+  border-radius: 8px;
+  outline: none;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.input:focus {
+  border-color: rgba(57, 130, 252, 0.9);
+  box-shadow: 0 0 0 4px rgba(57, 130, 252, 0.08);
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.pwToggle {
+  position: absolute;
+  right: 10px;
+  top: 36px;
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 4px;
+  display: inline-grid;
+  place-items: center;
+}
+
+.pwToggle svg {
+  width: 18px;
+  height: 18px;
+  color: rgba(230, 238, 248, 0.86);
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.pwIndicator {
+  position: absolute;
+  right: 10px;
+  top: 36px;
+  color: var(--muted);
+  display: inline-grid;
+  place-items: center;
+}
+
+.pwIndicator svg {
+  width: 14px;
+  height: 14px;
+  color: rgba(230, 238, 248, 0.86);
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(230, 238, 248, 0.8);
+  font-size: 13px;
+}
+
+.button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px 14px;
+  background: linear-gradient(180deg, #1e90ff, #0f6fe6);
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(15, 111, 230, 0.28);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.smallLink {
+  font-size: 13px;
+  color: rgba(230, 238, 248, 0.75);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.smallLink a {
+  color: #8ab8ff;
+  text-decoration: none;
+}
+
+.footerNote {
+  margin-top: 10px;
+  font-size: 12px;
+  color: rgba(230, 238, 248, 0.6);
+  text-align: center;
+}
